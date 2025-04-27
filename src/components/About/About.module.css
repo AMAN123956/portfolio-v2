@@ -1,0 +1,78 @@
+
+.aboutbox{
+    display: block;
+    width:75%;
+    margin:100px auto;
+    margin-top:-100px;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:20px 50px;
+    border-radius: 5px;
+  }
+  .aboutImg{
+    display:block;
+    width:150px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-60px;
+    border-radius: 100%;
+  }
+  
+  
+.twosection{
+    display:flex;
+    justify-content: space-between;
+  }
+  .leftsection{
+    width:60%;
+    
+  }
+  .rightsection{
+    width:30%;
+    padding:10px;
+    height:400px;
+    background-color: lightgray;
+  }
+  
+  
+  
+  
+  
+  /* Education Section */
+  .educationsection{
+    margin-top:50px;
+    padding:10px;
+  }
+  .educationBox{
+    display:flex;
+  }
+  /* .accBox{
+    display:flex;
+  } */
+  
+
+
+  /* Responsiveness */
+  @media screen and (max-width:768px){
+    .aboutbox{
+      width:95%;
+      margin-top: -50px;
+      padding:10px 10px;
+    }
+    .twosection{
+      flex-direction: column-reverse;
+    }
+    .twosection .leftsection{
+      width:100%;
+    }
+    .twosection .rightsection{
+      width:100%;
+    }
+    .educationBox{
+      flex-direction: column;
+    }
+    /* .accBox{
+      flex-direction: column;
+    } */
+  }
+  

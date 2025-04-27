@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #1B9CFC;
+    /* box-shadow:2px 2px 2px 1px #ffffff; */
+    font-size:1.3rem;
+    position:fixed;
+    z-index:+10;
+    width:100%;
+    top:0px;
+    display:flex;
+    padding:10px;
+    justify-content: space-between;    
+}
+.navText{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:600;
+    font-size:1.8rem;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+@media screen and (max-width:768px){
+    .navText{
+        font-size:1.4rem;
+        margin-left:5px;
+        margin-right:5px;
+    }
+}

@@ -1,0 +1,36 @@
+.skillBox{
+    width:80%;
+    margin:100px auto;
+    margin-top:-100px;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding:20px 50px;
+    border-radius: 5px;
+}
+.skillSubBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:150px;
+    padding:10px;
+    background-color:white;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+
+}
+.heading1{
+   color:black;
+   font-size:3rem;
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:768px){
+    .skillSubBox{
+        flex-direction: column;
+        height:650px;
+    }
+    .heading1{
+        font-size:2rem;
+    }
+}

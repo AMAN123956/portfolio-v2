@@ -1,0 +1,90 @@
+.workCard{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+/* ========================================================= */
+/* Left Section */
+.leftSection{
+    margin-top:20px;
+    margin:50px;
+    width:30%;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    
+   /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    */
+}
+/* Left Top Section */
+/* =============================================================== */
+.leftTopSection{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.leftTitle{
+    color:blue;
+    font-family: monospace;
+    font-size:3.3rem;
+    transition:0.2s linear all;
+}
+.leftTopSection:hover .leftTitle{
+    transform: scale(1.1);
+}
+/* Left Bottom Section */
+/* ===================================================================*/
+.leftBottomSection{
+    margin-top:30px;
+}
+.liveBtn{
+    border:none;
+    height:30px;
+    background-color: white;
+    font-size:1.2rem;
+    text-decoration: underline;
+}
+.shortInfo{
+  margin-top:5px;
+  padding:4px;
+  font-size:1.3rem;
+  letter-spacing: 0.22px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* ================================================================= */
+
+/* Right Section */
+.rightSection{
+    width:60%;
+    padding:0px;
+    border:20px solid whitesmoke;
+}
+.rightImg{
+    width:100%;
+    height:100%;
+}
+
+
+/* Responsiveness Code */
+@media screen and (max-width:768px){
+    .workCard{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:30px;
+        
+    }
+    .leftSection{
+        margin-top:20px;
+        width:96%;
+    }
+    .rightSection{
+        width:96%;
+    }
+}

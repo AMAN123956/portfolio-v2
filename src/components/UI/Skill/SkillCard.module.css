@@ -1,0 +1,23 @@
+.skillCardRow{
+   display:grid;
+   grid-template-columns: repeat(6, 1fr);
+}
+.skillCard{
+    width:140px;
+    height:140px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    padding:10px;
+    margin:10px 10px;
+}
+.skillIcons{
+    width:120px;
+    height:120px;
+    border-radius:10px;
+}
+@media screen and (max-width:768px) {
+    .skillCardRow{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}

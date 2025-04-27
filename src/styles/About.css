@@ -1,0 +1,476 @@
+.about-page {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.about-hero {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, rgba(27, 158, 252, 0.05) 0%, rgba(0, 255, 136, 0.05) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1B9EFC 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+  margin-top: 4rem;
+}
+
+.timeline::before {
+  display: none;
+}
+
+.experience-card {
+  position: relative;
+  border: 1px solid rgba(27, 158, 252, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  background: rgba(27, 158, 252, 0.02);
+  transition: all 0.3s ease;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: -3.5rem;
+  top: 2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1B9EFC 0%, #00ff88 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 4px rgba(27, 158, 252, 0.2);
+  z-index: 2;
+}
+
+.experience-card::after {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 2.5rem;
+  width: 2px;
+  height: calc(100% + 3rem);
+  background-image: linear-gradient(to bottom, 
+    #1B9EFC 20%, 
+    rgba(0, 0, 0, 0) 20%
+  );
+  background-size: 2px 15px;
+  z-index: 1;
+}
+
+.experience-card:last-child::after {
+  display: none;
+}
+
+.experience-card:hover {
+  border-color: rgba(27, 158, 252, 0.2);
+  background: rgba(27, 158, 252, 0.03);
+}
+
+.card-header {
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #1B9EFC 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.company {
+  display: block;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.25rem;
+}
+
+.period {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bullet {
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+}
+
+.technologies {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background: rgba(27, 158, 252, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(27, 158, 252, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(27, 158, 252, 0.08);
+  border-color: rgba(27, 158, 252, 0.2);
+}
+
+.education-section {
+  margin-top: 6rem;
+}
+
+.education-section h2 {
+  background: linear-gradient(45deg, #2196F3, #64B5F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.education-card {
+  border: 1px solid rgba(33, 150, 243, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.education-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #2196F3, #64B5F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-card p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.education-card .period {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #2196F3, #64B5F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 3rem 1rem;
+    min-height: 30vh;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.125rem;
+  }
+
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .experience-card {
+    margin-left: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .experience-card::before {
+    left: -2.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .experience-card::after {
+    left: -2.1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Add smooth scrolling to the page */
+html {
+  scroll-behavior: smooth;
+}
+
+.about-me-section {
+  margin: 2rem auto 4rem;
+  background: linear-gradient(145deg, rgba(27, 158, 252, 0.05) 0%, rgba(0, 255, 136, 0.05) 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(27, 158, 252, 0.15);
+  padding: 2.5rem;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(27, 158, 252, 0.3) 50%,
+    transparent
+  );
+}
+
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-me-text {
+  position: relative;
+}
+
+.about-me-text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.about-me-text p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-container {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: rgba(27, 158, 252, 0.02);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent,
+    rgba(27, 158, 252, 0.2),
+    transparent
+  );
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #1B9EFC 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.skills-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.skill-domain {
+  flex: 1;
+  background: rgba(27, 158, 252, 0.03);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(27, 158, 252, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-domain:hover {
+  transform: translateY(-5px);
+  background: rgba(27, 158, 252, 0.05);
+  border-color: rgba(27, 158, 252, 0.2);
+  box-shadow: 0 10px 30px rgba(27, 158, 252, 0.05);
+}
+
+.domain-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.domain-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.domain-title {
+  font-size: 1.5rem;
+  margin: 0;
+  background: linear-gradient(135deg, #1B9EFC 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skill-item {
+  background: rgba(27, 158, 252, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  border: 1px solid rgba(27, 158, 252, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background: rgba(27, 158, 252, 0.08);
+  transform: translateY(-2px);
+  border-color: rgba(27, 158, 252, 0.2);
+  box-shadow: 0 4px 15px rgba(27, 158, 252, 0.08);
+}
+
+@media (max-width: 1024px) {
+  .skills-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skill-domain {
+    padding: 1.75rem;
+  }
+
+  .domain-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .domain-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin-top: 3rem;
+    padding: 1.5rem;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skill-domain {
+    padding: 1.5rem;
+  }
+
+  .domain-icon {
+    font-size: 1.75rem;
+  }
+
+  .domain-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-list {
+    gap: 0.75rem;
+  }
+
+  .skill-item {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.95rem;
+  }
+} 

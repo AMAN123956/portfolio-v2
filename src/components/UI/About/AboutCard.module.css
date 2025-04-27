@@ -1,0 +1,19 @@
+.pskill{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height:40px;
+    width:150px;
+   }
+  .iconname{
+    margin-left:15px;
+    width:110px;
+    font-size:1.2rem;
+    text-align: left;
+  }
+  .icon{
+    width:30px;
+    height:30px;
+    margin-top: 0px;
+    border-radius:0px;
+  }
