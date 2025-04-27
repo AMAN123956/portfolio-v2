@@ -54,20 +54,20 @@ const Skills = () => {
       transition={{ duration: 0.5 }}
     >
       <section className="skills-hero">
-        <motion.div
+        {/* <motion.div
           className="skills-content"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-        >
+        > */}
           <div className="skill-content">
             <h1>My Skills</h1>
             <p>Technologies I work with</p>
           </div>
-        </motion.div>
+        {/* </motion.div> */}
       </section>
 
-      <section className="skills-container">
+      <section className="skills-container" style={{marginTop:"40px",marginBottom:"40px"}}>
         {skillCategories.map((category, categoryIndex) => (
           <motion.div
             key={categoryIndex}

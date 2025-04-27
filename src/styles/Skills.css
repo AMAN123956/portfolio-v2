@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.skills-content h1 {
+.skill-content h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 4rem;
   font-weight: 700;
@@ -28,7 +28,7 @@
   margin-bottom: 1.5rem;
 }
 
-.skills-content p {
+.skill-content p {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -41,10 +41,6 @@
 
 .skill-category {
   margin-bottom: 4rem;
-  background: rgba(27, 158, 252, 0.03);
-  border-radius: 24px;
-  padding: 2rem;
-  border: 1px solid rgba(27, 158, 252, 0.1);
 }
 
 .category-header {
@@ -52,12 +48,13 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .category-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .skill-category h2 {
@@ -73,16 +70,14 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   justify-items: center;
 }
 
 .skill-card {
-  background: rgba(27, 158, 252, 0.05);
-  backdrop-filter: blur(10px);
+  background: rgba(27, 158, 252, 0.02);
   border-radius: 16px;
   padding: 1.5rem;
-  border: 1px solid rgba(27, 158, 252, 0.1);
   transition: all 0.3s ease;
   width: 100%;
   display: flex;
@@ -94,14 +89,13 @@
 
 .skill-card:hover {
   transform: translateY(-5px);
-  background: rgba(27, 158, 252, 0.08);
-  border-color: rgba(27, 158, 252, 0.2);
-  box-shadow: 0 8px 25px rgba(27, 158, 252, 0.1);
+  background: rgba(27, 158, 252, 0.04);
 }
 
 .skill-icon {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .skill-card h3 {
@@ -116,11 +110,11 @@
 @media (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 
   .skill-category {
-    padding: 1.75rem;
+    margin-bottom: 3rem;
   }
 
   .skill-card {
@@ -128,7 +122,7 @@
   }
 
   .skill-icon {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -150,16 +144,15 @@
   }
 
   .skill-category {
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .category-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .category-icon {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .skill-category h2 {
@@ -176,7 +169,7 @@
   }
 
   .skill-icon {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .skill-card h3 {
