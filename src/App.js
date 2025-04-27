@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/global.css';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
@@ -9,16 +9,16 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Blogs from './pages/Blogs';
 import BlogPost from './pages/BlogPost';
-import ThreeBackground from './components/ThreeBackground';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
     <Router>
-      <div className="app">
-        <ThreeBackground />
+      <div className="App">
+        <AnimatedBackground />
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
           <Route path="/projects" component={Projects} />
