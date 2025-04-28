@@ -84,8 +84,8 @@ const Home = () => {
 
   // Get top 3 projects (one from each category)
   const featuredProjects = [
-    frontend[0], // Blog Website
-    fullstack[0], // JSSCONNECT
+    fullstack[0], // Blog Website
+    fullstack[2], // JSSCONNECT
     react[0] // DRIVE CLONE
   ];
 

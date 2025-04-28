@@ -22,12 +22,12 @@ const Contact = () => {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        formRef.current,
-        'YOUR_USER_ID'
-      );
+      // await emailjs.sendForm(
+      //   'YOUR_SERVICE_ID',
+      //   'YOUR_TEMPLATE_ID',
+      //   formRef.current,
+      //   'YOUR_USER_ID'
+      // );
       setStatus({ submitting: false, submitted: true, error: null });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
@@ -184,29 +184,25 @@ const Contact = () => {
             <div className="info-icon">📧</div>
             <h3>Email</h3>
             <a href="mailto:aman.dixit@example.com" className="info-link">
-              aman.dixit@example.com
+              amandixit033@gmail.com
             </a>
           </div>
           <div className="contact-info-item">
             <div className="info-icon">📍</div>
             <h3>Location</h3>
-            <p>India</p>
+            <p>Noida, Uttar Pradesh, India</p>
           </div>
           <div className="contact-info-item">
             <div className="info-icon">🌐</div>
             <h3>Connect</h3>
             <div className="social-links">
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://linkedin.com/in/aman123956" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="fab fa-linkedin"></i>
                 LinkedIn
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/aman123956" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="fab fa-github"></i>
                 GitHub
-              </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <i className="fab fa-twitter"></i>
-                Twitter
               </a>
             </div>
           </div>

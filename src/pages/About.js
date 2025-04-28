@@ -85,10 +85,16 @@ const About = () => {
   const education = [
     {
       degree: "Bachelor of Technology",
-      field: "Computer Science",
-      school: "Your University",
-      period: "2018 - 2022"
-    }
+      field: "Information Technology",
+      school: "JSS Academy of Technical Education",
+      period: "2019 - 2023"
+    },
+    // {
+    //   degree: "Senior Secondary",
+    //   field: "Science",
+    //   school: "Children Public Sr. Sec. School, Fatehpur",
+    //   period: "2008 - 2018"
+    // }
   ];
 
   return (

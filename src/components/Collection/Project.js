@@ -157,12 +157,12 @@ const react = [
     {
         title: "DRIVE CLONE",
         imgurl: driveStoreImg,
-        desc: "Tech Store is a react application with Add to Cart,Payment Integration using PayPal,Modal View.",
-        featuretext: "1.Chatbot which tells about your Probability of being Corona Postive Covid 19 Total Case Using an APIs Precautions and Symptomps Section along with FAQ",
-        techstack: ["reactjs", "css", "javascript", "bootstrap"],
+        desc: "This drive is a trial of cloning google drive. It has the features of user authentication , creating , moving , copying and deleting the folders and files.",
+        featuretext: "1.For  file uploading system we have used the cloudinary sdk which gives facility of uploading the photos , videos and audio files using the drag and drop system.",
+        techstack: ["reactjs", "nodejs","mongodb","expressjs"],
         color:'#1B9EFC',
-        github: "https://github.com/AMAN123956/tech-store",
-        live: "https://phone-hub.netlify.app/"
+        github: "https://github.com/AMAN123956/drive",
+        live: "https://drive-strike.netlify.app/login"
     },
     {
         title: "Tech Store",
